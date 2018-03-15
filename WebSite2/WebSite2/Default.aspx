@@ -18,7 +18,7 @@
    <form id="form1" runat="server">
         <div>
             Enter the service you want to stop
-            <asp:TextBox ID="TextBox1" runat="server" MaxLength="50"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" MaxLength="50" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             <br />
             Time for which you want the service<asp:TextBox ID="TextBox2" runat="server" MaxLength="50"></asp:TextBox>
             <br />
