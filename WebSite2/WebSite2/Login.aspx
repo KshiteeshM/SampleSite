@@ -7,7 +7,7 @@
     <title></title>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link href="App_StyleSheets/DefaultStyleSheet.css" rel="stylesheet" />
+    <link href="App_StyleSheets/LoginStyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server" class="default_form">
