@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href="App_StyleSheets/ProjectCompilation.css" rel="stylesheet" />
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,6 +45,42 @@
                 </div>
             </div>
         </nav>
+        <div class="container w-100" style="background-color: white;">
+            <br />
+            <h2 style="color: #0D47A1;">Projects</h2>
+            <hr />
+            <div class="container-fluid">
+                <asp:ListView runat="server" ID="Projects_LV" OnSelectedIndexChanged="Projects_LV_SelectedIndexChanged">
+                    <ItemTemplate>
+                        <div class="container-fluid">
+                            <div class="card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+                                <div class="row">
+                                    <div class ="bo">
+                                        <div class="col-md-3 px-1">
+                                            <div class="h-25"></div>
+                                            <asp:Image ID="Project_Image" CssClass="img-responsive" runat="server" ImageUrl='<%# Eval("m_Imageurl") %>' />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 px-8">
+                                        <br />
+                                        <asp:Label ID="Project_Title_Label" CssClass="card-title" runat="server" Text='<%# Eval("m_Title") %>' ForeColor="#0D47A1" />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <asp:Label ID="Project_Description_Label" CssClass="card-text" runat="server" Text='<%# Eval("m_Description") %>' ForeColor="#1E88E5" />
+
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                            <br />
+                        </div>
+
+                    </ItemTemplate>
+                </asp:ListView>
+            </div>
+        </div>
+
     </form>
 </body>
 </html>

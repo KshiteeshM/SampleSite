@@ -15,29 +15,28 @@
             <div class="row justify-content-center align-items-center">
                 <div class="card">
                     <div class="card-body">
-                        <img runat="server" class ="basic-image" src ="~/Images/philips-new-logo-brand-3a6e21c0797fec97-128x128.png" style="float:right;" />    
+                        <img runat="server" class="basic-image" src="~/Images/philips-new-logo-brand-3a6e21c0797fec97-128x128.png" style="float: right;" />
                         <h4 class="card-title">Sign In</h4>
                         <h4 class="card-text">To Continue To Projects</h4>
-                        
+
                         <hr />
                     </div>
-                    
+
                     <div class="card-body w-100">
-                        <asp:TextBox runat="server" ID="Username_TextBox" CssClass ="basicTextBox" placeholder="Username" >
+                        <asp:TextBox runat="server" ID="Username_TextBox" CssClass="basicTextBox" placeholder="Username">
                             
                         </asp:TextBox>
                         <br />
                         <br />
-                        <asp:TextBox runat="server" ID="Password_TextBox" CssClass ="basicTextBox" placeholder ="Password"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="Password_TextBox" CssClass="basicTextBox" placeholder="Password"></asp:TextBox>
                     </div>
-                    <div class ="card-body w-100">
+                    <div class="card-body w-100">
                         <hr />
-                        <asp:Button runat ="server" ID="Login_Button" CssClass="basicButton" Text ="LOGIN" OnClick="Login_Button_Click" />
+                        <asp:Button runat="server" ID="Login_Button" CssClass="basicButton" Text="LOGIN" OnClick="Login_Button_Click" />
                     </div>
                 </div>
             </div>
         </div>
-
     </form>
 </body>
 </html>
