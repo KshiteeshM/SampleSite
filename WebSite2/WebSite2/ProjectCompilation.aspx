@@ -28,7 +28,7 @@
                     <ul class="nav navbar-nav" id="nav-list">
                         <li><a href="Login.aspx">Home</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="ProjectCompilation.aspx">Projects<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">ProjectMQ</a></li>
                                 <li><a href="#">Lookup</a></li>
