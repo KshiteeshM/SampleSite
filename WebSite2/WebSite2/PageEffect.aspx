@@ -54,11 +54,11 @@
                 <asp:UpdatePanel runat="server" ID="UpdatePanel1">
                     <ContentTemplate>
                         <asp:Timer runat="server" ID="Timer1" Interval="20000" OnTick="Timer1_Tick"></asp:Timer>
-                        <asp:Label ID="ToBeLogged_Label" runat="server" Text="Waiting for the service to be restarted..." CssClass="list-group-item-heading"></asp:Label>
+                        <asp:Label ID="ToBeLogged_Label" runat="server" Text="Waiting for the service to be restarted..."></asp:Label>
                         <br />
-                        <asp:Label ID="Logging_Label" runat="server" Text="Logging LM_Criticals" Visible="False" CssClass="list-group-item-heading"></asp:Label>
+                        <asp:Label ID="Logging_Label" runat="server" Text="Logging LM_Criticals" Visible="False"></asp:Label>
                         <br />
-                        <asp:Label ID="Logged_Label" runat="server" Text="LM_Criticals have been logged .Click to continue" Visible="False" CssClass="list-group-item-heading"></asp:Label>
+                        <asp:Label ID="Logged_Label" runat="server" Text="LM_Criticals have been logged .Click to continue" Visible="False"></asp:Label>
                         <br />
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" Visible="False" CssClass="basicButton" />
                     </ContentTemplate>

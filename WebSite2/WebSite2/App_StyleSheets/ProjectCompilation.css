@@ -1,2 +1,26 @@
-﻿body {
+﻿.img-circle h-100 {
+    border-right: 10px dashed #333 !important;
+}
+.hori {
+    border: none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+.headerDivider {
+    border-left: 1px solid #38546d;
+    border-right: 1px solid #16222c;
+    height:100%;
+
+}
+.project-title{
+    font-size: 20px !important;
+}
+.project-desc {
+    font-size: 16px !important;
+    color: #1565C0 !important;
 }
