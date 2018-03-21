@@ -13,8 +13,8 @@ public partial class ProjectCompilation : System.Web.UI.Page
         {
             IList<Project> ProjectList = new List<Project>
             {
-                new Project("ProjectMQ","slidgjaosdigjoisdhilsdfbhlsidbflsfbdibhf","~/Images/philips-new-logo-brand-3a6e21c0797fec97-128x128.png"),
-            new Project("Lookup", "slidgjaosdigjoisdhilsdfbhlsidbflsfbdibhf", "~/Images/philips-new-logo-brand-3a6e21c0797fec97-128x128.png")
+                new Project("ProjectMQ","First Project Simulation","Default.aspx"),
+            new Project("Lookup", "Work In progress", "~/Images/philips-new-logo-brand-3a6e21c0797fec97-128x128.png")
         };
             Projects_LV.DataSource = ProjectList;
             

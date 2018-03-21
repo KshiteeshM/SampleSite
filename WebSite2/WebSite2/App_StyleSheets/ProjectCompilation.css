@@ -1,35 +1,4 @@
-﻿html, body {
-    margin: 0;
-    min-height: 100%;
-    background-color: aliceblue;
-}
-
-.default_form {
-    width: inherit;
-    margin: 0 auto;
-    padding: 20px;
-    vertical-align: central;
-    margin-top: 150px;
-}
-.navbar navbar-inverse bg-white {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-size:18px;
-    
-}
-a {
-    color: #536DFE !important;
-    transition-duration: 0.3s !important;
-    background-color: white !important;
-}
-    a:focus, a:hover {
-        color: #90CAF9 !important;
-        transition-duration: 0.3s !important;
-    }
-.dropdown open, dropdown-toggle {
-    background-color: white !important;
-    color:white !important;
-}
-.img-circle h-100 {
+﻿.img-circle h-100 {
     border-right: 10px dashed #333 !important;
 }
 .hori {
@@ -46,4 +15,12 @@ a {
     border-left: 1px solid #38546d;
     border-right: 1px solid #16222c;
     height:100%;
+
+}
+.project-title{
+    font-size: 20px !important;
+}
+.project-desc {
+    font-size: 16px !important;
+    color: #1565C0 !important;
 }

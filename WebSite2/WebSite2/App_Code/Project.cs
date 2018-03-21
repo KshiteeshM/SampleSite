@@ -11,7 +11,7 @@ public class Project
     private string title;
     private string imageurl;
     private string description;
-
+    private string projecturl;
     public string m_Title
     {
         get
@@ -45,13 +45,22 @@ public class Project
             description = value;
         }
     }
-    public Project(string title,string description,string imageurl)
+    public string m_ProjectUrl
     {
-        //
-        // TODO: Add constructor logic here
-        //
+        get
+        {
+            return projecturl;
+        }
+        set
+        {
+            projecturl = value;
+        }
+    }
+    public Project(string title,string description,string projecturl)
+    {
+        //TODO: Add Logic and CSS for images for cards in ProjectCompilation.css
         m_Title = title;
         m_Description = description;
-        m_Imageurl = imageurl;
+        m_ProjectUrl = projecturl;
     }
 }

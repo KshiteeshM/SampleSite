@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="App_StyleSheets/ParentStyleSheet.css" rel="stylesheet" />
     <link href="App_StyleSheets/ProjectCompilation.css" rel="stylesheet" />
 
 </head>
@@ -30,7 +31,7 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="ProjectCompilation.aspx">Projects<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">ProjectMQ</a></li>
+                                <li><a href="Default.aspx">ProjectMQ</a></li>
                                 <li><a href="#">Lookup</a></li>
                             </ul>
                         </li>
@@ -45,7 +46,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container w-100" style="background-color: white;">
+        <div class="container w-100 h-100" style="background-color: white;">
             <br />
             <h2 style="color: #0D47A1;">Projects</h2>
             <hr />
@@ -56,19 +57,17 @@
                             <div class="card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
                                 <div class="row">
                                     <div class ="bo">
-                                        <div class="col-md-3 px-1">
+                                        <div class="col-md-1 px-0.5">
                                             <div class="h-25"></div>
-                                            <asp:Image ID="Project_Image" CssClass="img-responsive" runat="server" ImageUrl='<%# Eval("m_Imageurl") %>' />
+                                            <!--<asp:Image ID="Project_Image" CssClass="img-responsive" runat="server" ImageUrl='<%# Eval("m_Imageurl") %>' />-->
                                         </div>
                                     </div>
                                     <div class="col-md-3 px-8">
                                         <br />
-                                        <asp:Label ID="Project_Title_Label" CssClass="card-title" runat="server" Text='<%# Eval("m_Title") %>' ForeColor="#0D47A1" />
+                                        <asp:LinkButton ID="Project_Title_Label" CssClass="project-title" runat="server" Text='<%# Eval("m_Title") %>' ForeColor="#0D47A1" PostBackUrl='<%# Eval("m_ProjectUrl") %>'/>
                                         <br />
                                         <br />
-                                        <br />
-                                        <asp:Label ID="Project_Description_Label" CssClass="card-text" runat="server" Text='<%# Eval("m_Description") %>' ForeColor="#1E88E5" />
-
+                                        <asp:Label ID="Project_Description_Label" CssClass="project-desc" runat="server" Text='<%# Eval("m_Description") %>' ForeColor="#1E88E5" />
                                     </div>
                                 </div>
                                 <br />
