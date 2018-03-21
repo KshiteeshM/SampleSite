@@ -16,51 +16,51 @@ public partial class Default2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        ArrayList data = new ArrayList();
-        string hostname = Request.QueryString["hostname"];
-        SqlConnection con = new SqlConnection();
-        //con.ConnectionString = "Data Source=" + hostname + ";Initial Catalog=StentorNotification;Integrated Security=True";
-        con.ConnectionString = "Data Source=YY111426;Initial Catalog=StentorNotification;Integrated Security=True";
-        con.Open();
-        SqlCommand command = new SqlCommand("Select  [Message] from [OutputNotificationMessages] where [Component]=@Component", con);
-        command.Parameters.AddWithValue("@Component",Request.QueryString["Component"]);
-        SqlDataReader reader;
-        reader = command.ExecuteReader();
-        int c = 0;
-        while (reader.Read())
-        {
-            data.Add(reader["Message"].ToString());
+        //ArrayList data = new ArrayList();
+        //string hostname = Request.QueryString["hostname"];
+        //SqlConnection con = new SqlConnection();
+        ////con.ConnectionString = "Data Source=" + hostname + ";Initial Catalog=StentorNotification;Integrated Security=True";
+        //con.ConnectionString = "Data Source=YY111426;Initial Catalog=StentorNotification;Integrated Security=True";
+        //con.Open();
+        //SqlCommand command = new SqlCommand("Select  [Message] from [OutputNotificationMessages] where [Component]=@Component", con);
+        //command.Parameters.AddWithValue("@Component",Request.QueryString["Component"]);
+        //SqlDataReader reader;
+        //reader = command.ExecuteReader();
+        //int c = 0;
+        //while (reader.Read())
+        //{
+        //    data.Add(reader["Message"].ToString());
             
-        }
-        con.Close();
+        //}
+        //con.Close();
       
-        DataTable dt = new DataTable();
+        //DataTable dt = new DataTable();
 
-        dt.Columns.Add("Message Body");
+        //dt.Columns.Add("Message Body");
 
         
 
-        int i = 0;
-        foreach (String str in data)
-        {
-            /* XmlDocument xmltest = new XmlDocument();
-             xmltest.LoadXml(obj.ToString());
+        //int i = 0;
+        //foreach (String str in data)
+        //{
+        //    /* XmlDocument xmltest = new XmlDocument();
+        //     xmltest.LoadXml(obj.ToString());
 
-             XmlNodeList elemlist = xmltest.GetElementsByTagName("MESSAGE_BODY");
+        //     XmlNodeList elemlist = xmltest.GetElementsByTagName("MESSAGE_BODY");
 
-             string result = elemlist[0].InnerXml;*/
+        //     string result = elemlist[0].InnerXml;*/
 
-            XmlDocument doc = new XmlDocument();
+        //    XmlDocument doc = new XmlDocument();
 
-            doc.LoadXml(str);
+        //    doc.LoadXml(str);
 
-            XmlNode node = doc.DocumentElement.SelectSingleNode("/MESSAGE_ROOT/BODY/REPORT/LOGMESSAGE/MESSAGE_BODY");
-            dt.Rows.Add();
-            dt.Rows[i]["Message Body"] = node.InnerText;
-            i++;
-        }
-        GridView1.DataSource = dt;
-        GridView1.DataBind();
+        //    XmlNode node = doc.DocumentElement.SelectSingleNode("/MESSAGE_ROOT/BODY/REPORT/LOGMESSAGE/MESSAGE_BODY");
+        //    dt.Rows.Add();
+        //    dt.Rows[i]["Message Body"] = node.InnerText;
+        //    i++;
+        //}
+        //GridView1.DataSource = dt;
+        //GridView1.DataBind();
         
     }
 
