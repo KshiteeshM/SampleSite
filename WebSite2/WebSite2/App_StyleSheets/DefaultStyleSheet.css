@@ -1,0 +1,21 @@
+﻿.basicButton {
+    position: relative;
+    background-color: #42A5F5;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 9px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    font-family: roboto,arial,sans-serif;
+}
+
+    .basicButton:hover {
+        background-color: #64B5F6;

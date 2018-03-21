@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="App_StyleSheets/DefaultStyleSheet.css" rel="stylesheet" />
     <link href="App_StyleSheets/ParentStyleSheet.css" rel="stylesheet" />
 </head>
 <body>
@@ -48,13 +49,14 @@
             <h2 style="color: #0D47A1;">ProjectMQ</h2>
             <hr />
             <div class="container-fluid">
-                Enter the service you want to stop
-                <asp:TextBox ID="TextBox1" runat="server" MaxLength="50" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                <asp:Label runat="server" Text="Enter the service you want to stop" ID="Label1" CssClass="list-group-item-heading"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" MaxLength="50" OnTextChanged="TextBox1_TextChanged" CssClass="form-control"></asp:TextBox>
                 <br />
-                Time for which you want the service<asp:TextBox ID="TextBox2" runat="server" MaxLength="50"></asp:TextBox>
+                <asp:Label runat="server" Text="Time for which you want the service" ID="Label2" CssClass="list-group-item-heading"></asp:Label>
+                <asp:TextBox ID="TextBox2" runat="server" MaxLength="50" CssClass="form-control"></asp:TextBox>
                 <br />
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="SUBMIT" CssClass="basicButton"/>
                 <br />
                 <br />
             </div>

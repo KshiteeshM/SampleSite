@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="h-100">
 
         <nav class="navbar navbar-inverse bg-white" style="background-color: white; border: none;">
             <div class="container-fluid">
